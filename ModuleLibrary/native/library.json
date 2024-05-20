@@ -1,0 +1,17 @@
+{
+    "name": "ModuleLibrary",
+    "authors": {
+        "name": "proddy"
+    },
+    "version": "1.0.0",
+    "platforms": "*",
+    "frameworks": "arduino",
+    "build": {
+        "flags": [
+            "-L.",
+            "-lModuleLibrary",
+            "-lModuleTest1",
+            "-lModuleTest2"
+        ]
+    }
+}
