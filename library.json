@@ -1,13 +1,13 @@
 {
   "name": "EMS-ESP Module Library",
-  "description": "EMS-ESP Module Library"
+  "description": "EMS-ESP Module Library",
   "repository": {
     "type": "git",
     "url": "https://github.com/emsesp/EMS-ESP-Modules"
   },
   "version": "v1.0",
   "authors": {
-    "name": "proddy",
+    "name": "proddy"
   },
   "frameworks": "arduino",
   "platforms": "*",
