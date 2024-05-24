@@ -1,0 +1,26 @@
+{
+    "name": "ModuleLibrary",
+    "version": "1.0.0",
+    "authors": {
+        "name": "proddy",
+        "maintainer": true
+    },
+    "keywords": "EMS-ESP",
+    "description": "External library modules for EMS-ESP",
+    "repository": {
+       "type": "git",
+       "url": "<https://github.com/emsesp/EMS-ESP-Modules>"
+    },
+    "license": "MIT",
+    "homepage": "<https://emsesp.github.io/docs>",
+    "platforms": "*",
+    "frameworks": "arduino",
+    "build": {
+        "flags": [
+            "-L.",
+            "-lModuleLibrary",
+            "-lModuleTest1",
+            "-lModuleTest2"
+        ]
+    }
+}
