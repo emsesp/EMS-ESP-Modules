@@ -2,19 +2,31 @@
 #define MODULELIBRARY_H
 
 #include <Arduino.h>
+
 #include <memory>
 #include <vector>
 
-class Module {}; // forward declaration
+#include <emsesp.h>
 
 class ModuleLibrary {
   public:
-    void setup();
+    class Modules {
+      public:
+        Modules(const char * name, std::unique_ptr<Module> module)
+            : name(name)
+            , module(std::move(module)) {
+        }
+        const char *            name;
+        std::unique_ptr<Module> module;
+    };
+
+    void start(emsesp::EMSESP *);
     void loop();
-    void status();
+    void list();
 
   private:
-    std::vector<std::unique_ptr<Module>> modules;
+    std::vector<Modules>     modules_;
+    static uuid::log::Logger logger_;
 };
 
 #endif
