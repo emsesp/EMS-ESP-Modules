@@ -22,7 +22,9 @@ class ModuleLibrary {
 
     void start(emsesp::EMSESP *);
     void loop();
-    void list();
+    void list(JsonObject output);
+
+    void enable(const char * name, bool enable);
 
   private:
     std::vector<Modules>     modules_;
