@@ -1,14 +1,12 @@
 # EMS-ESP-Modules
 
-This folder contains the external custom libraries for the EMS-ESP
+This repo contains the external custom libraries used when building the [EMS-ESP](https://github.com/emsesp/EMS-ESP32) firmware.
 
-## Libraries
+## Included Libraries
 
-The following libraries are included in this folder:
+The following libraries are available:
 - ModuleTest1
 - ModuleTest2
-
-This folder is self generated.
 
 ## License
 
