@@ -5,8 +5,6 @@ This repo contains the external custom libraries used when building the [EMS-ESP
 ## Included Libraries
 
 The following libraries are available:
-- ModuleTest1
-- ModuleTest2
 
 ## License
 

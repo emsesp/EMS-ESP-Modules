@@ -8,5 +8,5 @@ platform = env.get('PIOPLATFORM')
 
 env.Append(
   LIBPATH=[realpath(platform)],
-  LIBS=['ModuleTest1', 'Module', 'ModuleTest2']
+  LIBS=['Module']
 )
