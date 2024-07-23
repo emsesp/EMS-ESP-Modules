@@ -5,8 +5,9 @@ Import('env')
 from os.path import realpath
 
 platform = env.get('PIOPLATFORM')
+board = env.get('BOARD_MCU')
 
 env.Append(
-  LIBPATH=[realpath(platform)],
+  LIBPATH=[realpath(board)],
   LIBS=['Module']
 )
